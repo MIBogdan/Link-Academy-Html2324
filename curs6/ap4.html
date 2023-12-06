@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./ap4.css">
+</head>
+<body>
+    <h2>Formular de contact</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+        <label for="oras">Selecteaza orasul</label>
+        <select name="oras" id="oras" required>
+            <option value="1">Bucuresti</option>
+            <option value="2">Arad</option>
+            <option value="3">Deva</option>
+            <option value="4">Iasi</option>
+        </select>
+        </div>
+
+        <div>
+            <label for="">Cursurile dorite</label>
+            <select name="cursuri" id="cursuri" multiple>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="react">React</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="cv">CV</label>
+            <input type="file" name="CV" id="cv">
+        </div>
+
+        <fieldset>
+            <legend>Program cursuri</legend>
+            <label for="dim">Dimineata</label>
+            <input type="radio" name="program" id="dim" value="Dimineata">
+            <label for="pranz">Pranz</label>
+            <input type="radio" name="program" id="pranz" value="Pranz" disabled>
+            <label for="seara">Seara</label>
+            <input type="radio" name="program" id="seara" value="Seara" checked>
+        </fieldset>
+
+        <div>
+            <input type="checkbox" name="termeni" id="termeni" value="1">
+            <label for="termeni">Termeni si conditii</label>
+
+            <input type="checkbox" name="abonat" id="abonat" value="1">
+            <label for="abonat">Ma abonez</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Trimite datele">
+        </div>
+    </form>
+</body>
+</html>
