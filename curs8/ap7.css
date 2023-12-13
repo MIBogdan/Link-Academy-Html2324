@@ -1,0 +1,79 @@
+/* Meniu principal */
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    background-color: grey;
+    width: 100%;
+    margin: 20px auto;
+}
+
+nav > ul {
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+    
+}
+
+nav > ul > li {
+    text-transform: capitalize;
+    display: inline;
+    float: left;
+    padding: 7px 5px 10px 5px;
+}
+
+nav > ul > li:hover, nav > ul > li.activ {
+    background-color: red;
+}
+
+nav > ul > li.active > a {
+    color: #000;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px 20px;
+}
+
+/* Submeniu */
+
+ul.submeniu {
+    text-transform: uppercase;
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+nav > ul > li:hover > ul.submeniu {
+    display: block;
+    background-color: #284554;
+    clear: both;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 100;
+    width: 160px;
+}
+
+ul.submeniu > li > a {
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+ul.submeniu > li:hover {
+    background-color: red;
+    color: white;
+}
+
+nav > ul > li:hover > ul.submeniu > li {
+    padding: 7px 5px 7px 5px;
+}
+
+nav > ul > li:hover > ul.submeniu > li > a {
+    padding: 7px 5px;
+    text-decoration: none;
+    color: white;
+}

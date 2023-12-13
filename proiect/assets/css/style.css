@@ -11,7 +11,7 @@ nav {
     text-align: center;
 }
 
-nav ul li {
+nav>ul li {
     float: left;
     list-style: none;
     padding: 10px 35px;
@@ -25,14 +25,24 @@ nav ul li {
     border-radius: 15px;
 }
 
-nav ul {
+nav>ul {
     width: 100%;
     max-width: 700px;
-    margin: auto;
-
 }
 
-nav ul li a {
+ul li > ul {
+  display: none;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 250px;
+  position: relative;
+  top: 2px;
+  z-index: 1;
+}
+
+nav>ul li a {
     color: white;
     font-size: 1.3rem;
 }
@@ -58,11 +68,6 @@ ul {
     list-style-type: none;
 }
 
-ul li > ul li{
-    display: none;
-}
 
-ul li > li:hover {
-    display: inline-block;
-    
-}
+
+
